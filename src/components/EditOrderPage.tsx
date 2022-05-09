@@ -20,7 +20,7 @@ type EditOrderPageProps = {
   isOpen: boolean;
   onClose: () => void;
   orderData: OrderDataType;
-  setOrderData: Dispatch<SetStateAction<OrderDataType>>;
+  setOrderData: Dispatch<SetStateAction<OrderDataType | undefined>>;
 };
 
 const EditOrderPage = (props: EditOrderPageProps) => {

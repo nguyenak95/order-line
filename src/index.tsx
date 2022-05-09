@@ -1,16 +1,14 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { StrictMode } from "react";
-import * as ReactDOMClient from "react-dom/client";
+import { ChakraProvider } from "@chakra-ui/react"
+import { StrictMode } from "react"
+import * as ReactDOMClient from "react-dom"
 
-import App from "./App";
+import App from "./App"
 
-const rootElement = document.getElementById("root");
-const root = ReactDOMClient.createRoot(rootElement);
-
-root.render(
+ReactDOMClient.render(
   <StrictMode>
     <ChakraProvider>
       <App />
     </ChakraProvider>
-  </StrictMode>
-);
+  </StrictMode>,
+  document.getElementById("root")
+)

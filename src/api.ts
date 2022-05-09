@@ -30,7 +30,7 @@ export const fakeGet = (): OrderDataType => {
   const data = localStorage.getItem("orderData");
 
   if (data) {
-    const toObject = JSON.parse(data) as OrderDataType;
+    const toObject = JSON.parse(data);
     return toObject;
   }
 

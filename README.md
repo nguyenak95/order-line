@@ -1,2 +1,11 @@
 # order-line
-Created with CodeSandbox
+
+Install dependencies
+```
+npm install
+```
+
+Start dev server
+```
+npm start
+```

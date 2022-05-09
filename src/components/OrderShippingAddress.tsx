@@ -1,5 +1,5 @@
 import { Text, Box, Tag } from "@chakra-ui/react";
-import { OrderDataType } from "./types";
+import { OrderDataType } from "../types";
 
 type OrderShippingAddressProps = {
   orderData: OrderDataType;

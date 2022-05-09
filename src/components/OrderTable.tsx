@@ -9,7 +9,7 @@ import {
   Tfoot,
   Image
 } from "@chakra-ui/react";
-import { OrderItemType } from "./types";
+import { OrderItemType } from "../types";
 type OrderTableProps = {
   items: OrderItemType[];
 };
