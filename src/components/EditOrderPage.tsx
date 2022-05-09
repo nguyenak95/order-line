@@ -39,8 +39,11 @@ const EditOrderPage = (props: EditOrderPageProps) => {
   };
 
   const onSubmit = (data: OrderDataType) => {
+    const updatedTime = +new Date()
+    data.updatedDate = updatedTime
     fakePost(data);
     setOrderData(data);
+    onClose()
   };
 
   return (
